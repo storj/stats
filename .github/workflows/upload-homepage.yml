@@ -1,0 +1,43 @@
+# This is a workflow converts homepage.md to index.html and uploads it to the static website
+
+name: upload homepage
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow only on push event to the main branch, but not for pull requests
+  push:
+    branches: [ main ]
+    # Triggers the workflow only if the homepage.md file has been edited
+    paths:
+      - 'homepage.md'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      # Converts the homepage.md file to index.html
+      - uses: ZacJW/markdown-html-action@1.1.0
+        with:
+          input_files: '[["homepage.md"]]'
+          output_files: '["index.html"]'
+          extensions: '[]'   # Alas, this cannot be skipped even if empty
+      # Uploads the index.html file to the root of the destination bucket
+      - uses: jakejarvis/s3-sync-action@v0.5.1
+        with:
+          # This is a workaround as SOURCE_DIR does not support a single file
+          args: --exclude '*' --include 'index.html'
+        env:
+          AWS_S3_ENDPOINT: ${{ secrets.AWS_S3_ENDPOINT }}
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
