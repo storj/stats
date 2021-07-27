@@ -7,7 +7,7 @@ The statistics are provided in JSON format. See below.
 
 The data is updated every hour. Check the _Last-Modified_ header of the HTTP response for the exact time of the last update.
 
-Visit the GitHub repo at https://github.com/storj/stats to report issues or enhancement requests.
+Visit the GitHub repo at [https://github.com/storj/stats](https://github.com/storj/stats) to report issues or enhancement requests.
 
 ---
 
