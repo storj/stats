@@ -9,6 +9,8 @@ The data is updated every hour. Check the _Last-Modified_ header of the HTTP res
 
 Visit the GitHub repo at [https://github.com/storj/stats](https://github.com/storj/stats) to report issues or enhancement requests.
 
+Visit [https://storjstats.info](https://storjstats.info) to see a nice Grafana dashboard of the data. Created by the Storj forum member [Arkina](https://forum.storj.io/u/Arkina).
+
 ---
 
 [data.json](./data.json)
