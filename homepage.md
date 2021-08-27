@@ -50,6 +50,14 @@ Statistics about storage nodes:
 - **full_nodes** - number of storage nodes without free disk
 
 ---
+[nodes_geo.json](./nodes_geo.json)
+--------------------------
+
+Statistics about storage nodes geolocation:
+
+- **locations** - geolocation of active storage nodes. The geolocation data is updated every 24 hours.
+
+---
 
 [accounts.json](./accounts.json)
 --------------------------------
