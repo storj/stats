@@ -1,4 +1,4 @@
-# This is a workflow converts homepage.md to index.html and uploads it to the static website
+# This workflow converts homepage.md to index.html and uploads it to the static website
 
 name: upload homepage
 
