@@ -48,6 +48,7 @@ Statistics about storage nodes:
 - **total_nodes** - total number of unique storage nodes that ever contacted the satellite
 - **vetted_nodes** - number of vetted storage nodes, excludes disqualified and exited nodes
 - **full_nodes** - number of storage nodes without free disk
+- **payout** - node operators payouts in USD dollars (historical)
 
 ---
 [nodes_geo.json](./nodes_geo.json)
