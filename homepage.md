@@ -26,7 +26,7 @@ Statistics about stored and transferred data:
 - **storage_min_healthy_pieces_count** - minimum number of healthy pieces per segment stored on storage nodes
 - **storage_remote_bytes** - number of bytes stored on storage nodes (does not take into account the expansion factor of erasure encoding)
 - **storage_remote_segments** - number of segments stored on storage nodes
-- **storage_remote_segments_lost** - number of irreparable segments lost from storage nodes
+- **storage_remote_segments_lost** - number of segments that the repairer could not download at moment, usually due to network problems.
 - **storage_total_bytes** - total number of bytes (both inline and remote) stored on the network
 - **storage_total_objects** - total number of objects stored on the network
 - **storage_total_pieces** - total number of pieces stored on storage nodes
