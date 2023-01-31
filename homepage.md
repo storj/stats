@@ -49,6 +49,7 @@ Statistics about storage nodes:
 - **vetted_nodes** - number of vetted storage nodes, excludes disqualified and exited nodes
 - **full_nodes** - number of storage nodes without free disk
 - **active_wallets** - number of active wallets
+- **payout** - node operators payouts in USD dollars (historical)
 
 ---
 [nodes_geo.json](./nodes_geo.json)
