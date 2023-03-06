@@ -33,6 +33,7 @@ Statistics about stored and transferred data:
 - **storage_total_segments** - total number of segments stored on storage nodes
 - **storage_free_capacity_estimate_bytes** - statistical estimate of free storage node capacity, with suspicious values removed
 - **storage_after_expansion_total_bytes** - total number of bytes stored on the network after expansion
+- **median_available_bytes** - nodes median available bytes (unvetted nodes included)
 - **vetted_median_available_bytes** - vetted nodes median available bytes
 - **vetted_storage_free_capacity_estimate_bytes** - statistical estimate of free storage node capacity considering only vetted nodes
 
