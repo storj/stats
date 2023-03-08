@@ -20,22 +20,20 @@ Statistics about stored and transferred data:
 
 - **bandwidth_bytes_downloaded** - number of bytes downloaded (egress) from the network for the last 30 days
 - **bandwidth_bytes_uploaded** - number of bytes uploaded (ingress) to the network for the last 30 days
+- **storage_free_capacity_estimate_bytes** - statistical estimate of free storage node capacity, with suspicious values removed
+- **storage_free_capacity_estimate_vetted_bytes** - statistical estimate of free storage node capacity considering only vetted nodes
 - **storage_inline_bytes** - number of bytes stored in inline segments on the satellite
 - **storage_inline_segments** - number of segments stored inline on the satellite
 - **storage_median_healthy_pieces_count** - median number of healthy pieces per segment stored on storage nodes
 - **storage_min_healthy_pieces_count** - minimum number of healthy pieces per segment stored on storage nodes
 - **storage_remote_bytes** - number of bytes stored on storage nodes (does not take into account the expansion factor of erasure encoding)
-- **storage_remote_segments** - number of segments stored on storage nodes
 - **storage_remote_segments_lost** - number of segments that the repairer could not download at moment, usually due to network problems.
+- **storage_remote_segments** - number of segments stored on storage nodes
+- **storage_total_bytes_after_expansion** -  total number of bytes stored on the network after expansion by erasure coding
 - **storage_total_bytes** - total number of bytes (both inline and remote) stored on the network
 - **storage_total_objects** - total number of objects stored on the network
 - **storage_total_pieces** - total number of pieces stored on storage nodes
 - **storage_total_segments** - total number of segments stored on storage nodes
-- **storage_free_capacity_estimate_bytes** - statistical estimate of free storage node capacity, with suspicious values removed
-- **storage_after_expansion_total_bytes** - total number of bytes stored on the network after expansion
-- **median_available_bytes** - nodes median available bytes (unvetted nodes included)
-- **vetted_median_available_bytes** - vetted nodes median available bytes
-- **vetted_storage_free_capacity_estimate_bytes** - statistical estimate of free storage node capacity considering only vetted nodes
 
 ---
 
