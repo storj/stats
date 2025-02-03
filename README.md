@@ -1,12 +1,12 @@
-# Storj DCS Public Network Statistics
+# Storj Public Network Statistics
 
-This repository is designated to manage the work around providing official public statistics from Storj DCS satellites.
+This repository is designated to manage the work around providing official public statistics from Storj satellites.
 
 ## Where is the service hosted?
 
 You can access the service here: https://stats.storjshare.io/
 
-The service is hosted as a [static website](https://docs.storj.io/dcs/how-tos/host-a-static-website) from a Storj DCS bucket.
+The service is hosted as a [static website](https://storj.dev/dcs/code/static-site-hosting) from a Storj bucket.
 
 ## How to report a problem or an improvement request?
 

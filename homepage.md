@@ -1,7 +1,7 @@
-Storj DCS Public Network Statistics
+Storj Public Network Statistics
 ===================================
 
-This website provides official public statistics from Storj DCS satellites.
+This website provides official public statistics from Storj satellites.
 
 The statistics are provided in JSON format. See below.
 
@@ -72,4 +72,4 @@ Statistics about user accounts:
 
 ---
 
-_This website is hosted on Storj DCS._
+_This website is hosted on Storj._
